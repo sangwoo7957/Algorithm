@@ -6,7 +6,6 @@ def find(node):
         parent[node] = find(parent[node])
     return parent[node]
 
-
 def union(node_v, node_u):
     root1 = find(node_v)
     root2 = find(node_u)
