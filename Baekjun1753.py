@@ -11,7 +11,7 @@ graph = [[] for _ in range(V + 1)]
 
 def Dijkstra(start):
     dp[start] = 0
-    heapq.heappush(heap,(0, start))
+    heapq.heappush(heap, (0, start))
 
     while heap:
         wei, now = heapq.heappop(heap)
